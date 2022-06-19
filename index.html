@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;/salt&gt; :: ToDo</title>
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./style/todo.css" />
+    <script defer src="./js/todo.js"></script>
+  </head>
+
+  <body class="body">
+    <h1 class="body__title">My ToDo App</h1>
+    <section class="section">
+      <h1 class="section__title">Register New ToDo</h1>
+      <form class="form" action="">
+        <label class="form__titleLabel" for="title">Title</label>
+        <input
+          data-testid="txtTodoItemTitle"
+          id="txtTodoItemTitle"
+          class="form__titleInput"
+          name="title"
+          type="text"
+        />
+        <label class="form__descriptionLabel" for="description"
+          >Description</label
+        >
+        <input
+          id="txtTodoItemDescription"
+          class="form__descriptionInput"
+          name="description"
+          type="text"
+        />
+        <button
+          data-testid="btnAddTodo"
+          id="btnAddTodo"
+          class="form__submit"
+          type="submit"
+        >
+          Add
+        </button>
+      </form>
+    </section>
+
+    <main class="main" id="todoList" data-testid="todoList"></main>
+  </body>
+</html>

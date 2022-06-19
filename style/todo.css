@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+.body {
+  font-family: "Roboto", sans-serif;
+  margin: 5%;
+  background-color: hsl(0deg 0% 100%);
+}
+
+.body__title {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.section {
+  position: relative;
+  height: 10em;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  background-color: rgb(255 162 166);
+}
+
+.section__title {
+  position: relative;
+  display: inline-block;
+  top: -12px;
+  left: 12px;
+  padding: 4px;
+  font-size: 1em;
+  font-weight: 900;
+  border: 1px solid rgb(255 162 162);
+  border-radius: 50px;
+  background-color: rgb(255 255 255);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 88%;
+  padding: 1em;
+  padding-top: 0;
+}
+
+.form__submit {
+  padding-block: 0.3em;
+  border-radius: 20px;
+  background-color: rgb(0 0 0);
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo__item {
+  position: relative;
+  height: 8em;
+  margin-bottom: 0.4em;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: rgb(194 241 227);
+}
+
+.todo__title {
+  margin-bottom: 0.9em;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form__titleInput--danger {
+  border: 5px solid red;
+  border-radius: 4px;
+}
+
+.todo__text {
+  font-size: 14px;
+}
+
+.todo__time {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 10px;
+}
+
+.todo__removeBtn {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  cursor: pointer;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(221 12 57);
+}
+
+.todo__item--completed {
+  order: 1;
+  background-color: rgb(242 242 242);
+}
+.todo__item--completed > h3,
+.todo__item--completed > p {
+  text-decoration: line-through;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .form__submit {
+    align-self: self-end;
+    padding: 0.3em 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0 0 0);
+  }
+}
